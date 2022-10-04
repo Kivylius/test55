@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import { registerDevMenuItems } from "expo-dev-client";
+import { registerDevMenuItems } from "expo-dev-menu";
 
 const devMenuItems = [
   {
