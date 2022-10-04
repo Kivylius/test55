@@ -1,5 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { registerDevMenuItems } from "expo-dev-client";
+
+const devMenuItems = [
+  {
+    name: "My Custom Button",
+    callback: () => console.log("Hello world!"),
+  },
+];
+
+registerDevMenuItems(devMenuItems);
+
 
 export default function App() {
   return (
